@@ -1,0 +1,114 @@
+:root {
+	--BrightOrange: hsl(31, 77%, 52%);
+	--DarkCyan: hsl(184, 100%, 22%);
+	--VeryDarkCyan: hsl(179, 100%, 13%);
+	--TransparentWhiteParagraphs: hsla(0, 0%, 100%, 0.75);
+	--Background-headings-buttons: hsl(0, 0%, 95%);
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	display: flex;
+	font-family: 'Lexend Deca', sans-serif;
+	font-size: 1.5rem;
+	background-color: var(--Background-headings-buttons);
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	flex-direction: column;
+}
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 5rem auto;
+	border-radius: 8px;
+	overflow: hidden;
+}
+.card-container {
+	max-width: 32.82rem;
+	border-radius: 8px;
+}
+.card-sedans, .card-suvs, .card-luxury {
+	padding: 5rem;
+}
+.card-sedans {
+	background-color: var(--BrightOrange);
+}
+.card-suvs {
+	background-color: var(--DarkCyan);
+}
+.card-luxury {
+	background-color: var(--VeryDarkCyan);
+}
+.card-sedans h1, .card-suvs h1, .card-luxury h1 {
+	text-transform: uppercase;
+	font-family: 'Big Shoulders Display', cursive;
+	color: var(--Background-headings-buttons);
+	font-size: 4rem;
+	padding-top: 3rem;
+}
+.card-sedans p, .card-suvs p, .card-luxury p {
+	padding-top: 3rem;
+	color: var(--TransparentWhiteParagraphs);
+	font-weight: 400;
+	line-height: 2.5rem;
+}
+button {
+	margin-top: 3rem;
+	width: 14.5rem;
+	height: 4.8rem;
+	border: none;
+	border-radius: 30px;
+	font-size: 1.4rem;
+	font-weight: 700;
+	letter-spacing: .1rem;
+	background-color: var(--Background-headings-buttons);
+}
+.card-sedans button {
+	color: var(--BrightOrange);
+}
+.card-suvs button {
+	color: var(--DarkCyan);
+}
+.card-luxury button {
+	color: var(--VeryDarkCyan);
+}
+.card-sedans button:hover, .card-suvs button:hover, .card-luxury button:hover {
+	cursor: pointer;
+	background-color: initial;
+	border: 2px solid ;
+	color: var(--TransparentWhiteParagraphs);
+}
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+@media (min-width: 970px) {
+	.container {
+		min-width: 92.5rem;
+		padding: 0;
+		margin: 0;
+	}
+	.card-container {
+		display: flex;
+		flex-direction: row;
+		max-width: 92.5rem;
+		margin: 0;
+	}
+	.card-sedans, .card-suvs, .card-luxury {
+			padding: 5rem;
+	}
+	button {
+		margin-top: 9rem;
+	}
+}

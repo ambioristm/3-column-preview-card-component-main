@@ -48,7 +48,7 @@ body {
 .card-luxury {
 	background-color: var(--VeryDarkCyan);
 }
-.card-sedans h1, .card-suvs h1, .card-luxury h1 {
+.card-sedans h2, .card-suvs h2, .card-luxury h2 {
 	text-transform: uppercase;
 	font-family: 'Big Shoulders Display', cursive;
 	color: var(--Background-headings-buttons);
